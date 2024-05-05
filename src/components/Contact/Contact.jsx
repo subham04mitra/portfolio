@@ -33,7 +33,7 @@ const Contact = () => {
           (result) => {
             console.log(result.text);
             setDone(true);
-            setFormData({}); // Clear the form fields
+            setFormData({});
           },
           (error) => {
             console.log(error.text);

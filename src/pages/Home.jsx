@@ -4,8 +4,6 @@ import homeLogo from '../assets/img2.jpg';
 import Particle from '../components/Particle';
 import About from '../components/Home/About';
 import Type from '../components/Home/Type';
-import BootstrapTable from 'react-bootstrap-table-next';
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 const Home = () => {
   // Data for the table
@@ -20,17 +18,6 @@ const Home = () => {
     { key: 'Database Skills', value: 'MongoDB, PostgreSQL, Oracle' },
     { key: 'Interests', value: 'Web Technologies, Artificial Intelligence' }
   ];
-
-  // Columns for the table
-  const columns = [{
-    dataField: 'key',
-    text: '',
-    style: { color: 'yellow',textAlign:'center' } // Setting header color to golden
-  }, {
-    dataField: 'value',
-    text: '',
-    style: { color: 'silver' ,textAlign:'left'} // Setting row color to silver
-  }];
 
   return (
     <section>
@@ -69,18 +56,19 @@ const Home = () => {
       </Container>
       <About />
 
-      {/* Stylish Table */}
-      <Container style={{ marginTop: '1px' ,color:'silver',maxWidth:'55rem'}}>
+      {/* Bootstrap Table */}
+      <Container style={{ marginTop: '1px', color: 'silver', maxWidth: '55rem' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>Personal Information</h2>
-        <BootstrapTable
-          bootstrap4
-          keyField='key'
-          data={personalInfo}
-          columns={columns}
-          bordered={false}
-          headerClasses="table-header"
-          bodyClasses="table-body"
-        />
+        <table className="table">
+          <tbody>
+            {personalInfo.map((item, index) => (
+              <tr key={index}>
+                <td style={{ color: 'yellow', textAlign: 'center' }}>{item.key}</td>
+                <td style={{ color: 'silver', textAlign: 'left' }}>{item.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </Container>
     </section>
   );
