@@ -9,7 +9,10 @@ import ecom from "../assets/projects/ecom.jpg";
 import driver from "../assets/projects/driver.jpg";
 import bill from "../assets/projects/bill.png";
 import pizzeria from "../assets/projects/pizzeria.png";
+import act from "../assets/projects/ACT.jpg";
 import tamb from "../assets/projects/tambola.png";
+import Bill from "../assets/projects/BILL.jpg";
+import gym1 from "../assets/projects/gym1.jpg";
 const Projects = () => {
   return (
     <Container fluid className="project-section">
@@ -24,11 +27,41 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Bill}
+              isBlog={false}
+              title="Inventory Management Software cum Billing App"
+              description="Inventory Management Software capable of Billing and keep record of stocks with live update of stocks,bulk entry with excel sheet, monthly analysis report,charts,customer wise details,e invoice generation,balance sheet,multiple role creation,separte database for customers. Completely build in MERN Stack."
+              ghLink="https://github.com/technoid2023/Bill.git"
+              demoLink="https://bill-ruddy.vercel.app//"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={cafe}
               isBlog={false}
               title="Veggi_Corner"
               description="This is a resturants website which is located near Liluah ,Howrah. The whole Project is developed on React Framework."
               demoLink="https://cafe-git-master-technoid2023.vercel.app/?vercelToolbarCode=26RZjQfZRXAPDJS"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={act}
+              isBlog={false}
+              title="ActivePest Controll Website"
+              description="Business Website with admin panel to upload current events build in React JS Completely"
+              ghLink="https://github.com/technoid2023/activepestcontrol.git"
+              demoLink="https://activepestcontrol.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gym1}
+              isBlog={false}
+              title="GYM Website"
+              description="GYM Website with admin panel to upload current events build in React JS Completely"
+              ghLink="https://github.com/technoid2023/fitprogym.git"
+              demoLink="https://fitprogym-dev.vercel.app/"
             />
           </Col>
 

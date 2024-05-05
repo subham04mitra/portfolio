@@ -16,52 +16,31 @@ const About = () => {
         <Container fluid className="home-about-section" id="about">
           <Container>
             <Row>
-              <Col md={8} className="home-about-description">
-                <h1 style={{ fontSize: "2.6em" }}>
-                  LET ME <span className="yellow"> INTRODUCE </span> MYSELF
-                </h1>
-                <p className="home-about-body">
-                 Hi, my name is <span className="" style={{color:'goldenrod'}} >Subham Mitra </span>
-                 and I'm from <span className="yellow" > Kolkata,India</span>
-                <br />
-                <br />
-                <p style={{color:'goldenrod'}}>I graduated with a Master's degree in Computer Application(MCA)</p> in 2023 from FIEM,Kolkata.
-                <br />
-                <br />
-                  As a
-                  <b className="" style={{color:'goldenrod'}}> Back-End </b>developer,  
-                  I enjoy tackling new challenges and continuously expanding my skillset.
-                  <br />
-                  <br />I am proficient in
-                    <b className="" style={{color:'goldenrod'}}> Javascript,Php </b>
-                    as well as have knowledge in programming languages such as Java, Python,
-                  <b className="" style={{color:'goldenrod'}}> Node Js, Laravel and Spring Boot.</b>
-                  <br />
-                  <br />
-                  I have a passion for working
-                  with <b className="" style={{color:'goldenrod'}}>Node.js, MongoDB, Java, Postgre Sql</b> and
-                  <i>
-                    <b className="yellow">
-                      {" "}
-                      modern Javascript,Java libraries and frameworks
-                    </b>
-                  </i>
-                  &nbsp; like
-                  <i>
-                    <b className="" style={{color:'goldenrod'}}> Node.js,Spring Boot etc.</b>
-                  </i>
-                  <br />
-                  <br />
-                  I am also interested in building new
-                  <i>
-                    <b className="yellow"> Web Technologies and Products, </b>
-                    as well as exploring areas related to
-                    <b className="" style={{color:'goldenrod'}}> Artificial Intelligence.</b>
-                  </i>
-                  <br />
-                  
-                </p>
-              </Col>
+            <Col md={8} className="home-about-description">
+    <h1 style={{ fontSize: "2.6em" }}>
+        ALLOW ME TO <span className="yellow"> INTRODUCE </span> MYSELF
+    </h1>
+    <p className="home-about-body">
+        Greetings, I am <span className="" style={{color:'goldenrod'}} >Subham Mitra</span>, hailing from <span className="yellow" >Kolkata, India</span>.
+        <br />
+        <br />
+        Holding a <span className="" style={{color:'goldenrod'}} > Master's degree in Computer Application (MCA)</span> obtained in 2023 from Future Institute of Engineering and Management, Kolkata, I am committed to the pursuit of excellence in software development.
+        <br />
+        <br />
+        With a specialization in <b className="" style={{color:'goldenrod'}}>Back-End</b> development, I thrive on overcoming challenges and perpetually refining my expertise.
+        <br />
+        <br />
+        Proficient in <b className="" style={{color:'goldenrod'}}>JavaScript</b> and <b className="" style={{color:'goldenrod'}}>PHP</b>, I possess a solid foundation in programming languages such as Java and Python. Additionally, I am adept in frameworks and technologies including <b className="" style={{color:'goldenrod'}}>Node.js</b>, <b className="" style={{color:'goldenrod'}}>Laravel</b>, and <b className="" style={{color:'goldenrod'}}>Spring Boot</b>.
+        <br />
+        <br />
+        My passion lies in crafting robust solutions utilizing <b className="" style={{color:'goldenrod'}}>Node.js</b>, <b className="" style={{color:'goldenrod'}}>MongoDB</b>, <b className="" style={{color:'goldenrod'}}>Java</b>, and <b className="" style={{color:'goldenrod'}}>PostgreSQL</b>, alongside embracing contemporary JavaScript and Java libraries and frameworks like <b className="" style={{color:'goldenrod'}}>Node.js</b> and <b className="" style={{color:'goldenrod'}}>Spring Boot</b>.
+        <br />
+        <br />
+        Beyond development, I harbor a keen interest in pioneering new <span className="yellow">Web Technologies and Products</span>, and delving into domains associated with <b className="" style={{color:'goldenrod'}}>Artificial Intelligence</b>.
+        <br />
+    </p>
+</Col>
+
               <Col md={4} className="myAvtar">
                 <Tilt>
                   <img src={LaptopImg} className="img-fluid" alt="avatar" />
@@ -123,6 +102,7 @@ const About = () => {
               </Col>
             </Row>
           </Container>
+
         </Container>
       );
     

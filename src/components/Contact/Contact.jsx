@@ -18,13 +18,10 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     if (!formData.from_name || !formData.reply_to || !formData.message) {
-      setNotDone(true)
+      setNotDone(true);
     } else {
-
-      //  Please use your own credentials from emailjs or i will recive your email
-
       emailjs
         .sendForm(
           "service_wrfsrcl",
@@ -36,6 +33,7 @@ const Contact = () => {
           (result) => {
             console.log(result.text);
             setDone(true);
+            setFormData({}); // Clear the form fields
           },
           (error) => {
             console.log(error.text);
@@ -43,6 +41,7 @@ const Contact = () => {
         );
     }
   };
+  
 
 
   return (
